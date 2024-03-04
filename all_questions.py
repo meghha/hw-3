@@ -161,13 +161,13 @@ def question5():
     answers = {}
 
     # type: set
-    answers["(a)"] = set()
+    answers["(a)"] = set("Group A","Group B")
 
     # type: explanatory string (at least four words)
     answers["(a) explain"] = ""
 
     # type: set
-    answers["(b)"] = set()
+    answers["(b)"] = set("Group B","Group C")
 
     # type: explanatory string (at least four words)
     answers["(b) explain"] = ""
@@ -233,16 +233,16 @@ def question7():
     answers = {}
 
     # type: string
-    answers["(a)"] = ""
+    answers["(a)"] = "Cluster 4"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Since cluster 4 exhibits the highest entropy, that is there is a disorder or uncertainty within that cluster regarding the distribution of classes. Lower values indicate better separation of classes within the cluster."
 
     # type: string
-    answers["(b)"] = ""
+    answers["(b)"] = "Cluster 1"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "Cluster 1 exhibits lowest entropy."
 
     return answers
 
@@ -314,22 +314,22 @@ def question9():
     answers = {}
 
     # type: list
-    answers["(a)"] = []
+    answers["(a)"] = ["hierarchial","overlapping","partial"]
 
     # type: list
-    answers["(b)"] = []
+    answers["(b)"] = ["partitional","exclusive","complete"]
 
     # type: list
-    answers["(c)"] = []
+    answers["(c)"] = ["partitional","fuzzy","complete"]
 
     # type: list
-    answers["(d)"] = []
+    answers["(d)"] = ["hierarchial","overlapping","partial"]
 
     # type: list
-    answers["(e)"] = []
+    answers["(e)"] = ["partitional","exclusive","partial"]
 
     # type: explanatory string (at least four words)
-    answers["(e) explain"] = ""
+    answers["(e) explain"] = "Hierachial structure can be possible for students with similar scores"
 
     return answers
 
@@ -341,25 +341,25 @@ def question10():
     answers = {}
 
     # type: string
-    answers["(a) Figure (a)"] = ""
+    answers["(a) Figure (a)"] = "no"
 
     # type: string
-    answers["(a) Figure (b)"] = ""
+    answers["(a) Figure (b)"] = "yes"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "DBSCAN is used for clusters when they can be demarcated by high and low density regions. Since the features of the face, eyes, nose, and lips are within the high density region and are not separated they cannot be clustered well by DBSCAN for figure a. For figure b however, the dense regions are properly separated, which can be picked by DBSCAN techniquw."
 
     # type: string
-    answers["(b) Figure (a)"] = ""
+    answers["(b) Figure (a)"] = "no"
 
     # type: string
-    answers["(b) Figure (b)"] = ""
+    answers["(b) Figure (b)"] = "yes"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "K means clustering should be used for clusters when they are clearly demarcated. In figure a, the cluster does not have clear boundaries , and instead it is just a cluster with gaps in it represented by the features of the face."
 
     # type: string
-    answers["(c)"] = ""
+    answers["(c)"] = "DBSCAN"
 
     return answers
 
