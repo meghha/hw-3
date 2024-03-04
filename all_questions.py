@@ -98,10 +98,10 @@ def question3():
     answers = {}
 
     # type: a string that evaluates to a float
-    answers["(a) SSE"] = "4 * (R^2)"
+    answers["(a) SSE"] = "4 * (R**2)"
 
     # type: a string that evaluates to a float
-    answers["(b) SSE"] = "4 * (a^2 + b^2  c^2)"
+    answers["(b) SSE"] = "4 * (a**2 + b**2  c**2)"
 
     # type: a string that evaluates to a float
     answers["(c) SSE"] = "10 * (R^2)"
@@ -116,25 +116,25 @@ def question4():
     answers = {}
 
     # type: int
-    answers["(a) Circle (a)"] = 0
+    answers["(a) Circle (a)"] = 1
 
     # type: int
-    answers["(a) Circle (b)"] = 0
+    answers["(a) Circle (b)"] = 1
 
     # type: int
-    answers["(a) Circle (c)"] = 0
+    answers["(a) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
     answers["(a) explain"] = ""
 
     # type: int
-    answers["(b) Circle (a)"] = 0
+    answers["(b) Circle (a)"] = 1
 
     # type: int
-    answers["(b) Circle (b)"] = 0
+    answers["(b) Circle (b)"] = 1
 
     # type: int
-    answers["(b) Circle (c)"] = 0
+    answers["(b) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
     answers["(b) explain"] = ""
@@ -146,7 +146,7 @@ def question4():
     answers["(c) Circle (b)"] = 0
 
     # type: int
-    answers["(c) Circle (c)"] = 0
+    answers["(c) Circle (c)"] = 2
 
     # type: explanatory string (at least four words)
     answers["(c) explain"] = ""
@@ -164,13 +164,13 @@ def question5():
     answers["(a)"] = set("Group A","Group B")
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Single Linkage, also known as minimum linkage hierarchical clustering, is a method used to create a hierarchical clustering of a dataset. In this technique, the distance between two clusters is defined as the minimum distance between any single data point in the first cluster and any single data point in the second cluster. Since the shortest distance is between A and B, those two clusters would be combined first."
 
     # type: set
-    answers["(b)"] = set("Group B","Group C")
+    answers["(b)"] = set("Group A","Group C")
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "Complete Linkage, also known as maximum linkage hierarchical clustering, is another method used to create a hierarchical clustering of a dataset. In this technique, the distance between two clusters is defined as the maximum distance between any single data point in the first cluster and any single data point in the second cluster. Since Group A and Group C have the shortest complete linkage, those two are combined."
 
     return answers
 
@@ -182,16 +182,16 @@ def question6():
     answers = {}
 
     # type: set
-    answers["(a) core"] = set()
+    answers["(a) core"] = {"E" "B", "F", "J", "C", "L", "M", "I"}
 
     # type: set
-    answers["(a) boundary"] = set()
+    answers["(a) boundary"] = {"D","G"}
 
     # type: set
-    answers["(a) noise"] = set()
+    answers["(a) noise"] = {"A","H"}
 
     # type: set
-    answers["(b) cluster 1"] = set()
+    answers["(b) cluster 1"] = {"B","C","E","F","G","E","D"}
 
     # type: set
     answers["(b) cluster 2"] = set()
@@ -203,19 +203,19 @@ def question6():
     answers["(b) cluster 4"] = set()
 
     # type: set
-    answers["(c)-a core"] = set()
+    answers["(c)-a core"] = {"B","C","D","E","F","G","I","J","L","M"}
 
     # type: set
-    answers["(c)-a boundary"] = set()
+    answers["(c)-a boundary"] = {"A","H"}
 
     # type: set
     answers["(c)-a noise"] = set()
 
     # type: set
-    answers["(c)-b cluster 1"] = set()
+    answers["(c)-b cluster 1"] = {'A','B','C','D','E','F','G','H','I','J','L','M'}
 
     # type: set
-    answers["(c)-b cluster 2"] = set()
+    answers["(c)-b cluster 2"] =  {"A"}
 
     # type: set
     answers["(c)-b cluster 3"] = set()
