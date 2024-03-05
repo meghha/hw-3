@@ -161,13 +161,13 @@ def question5():
     answers = {}
 
     # type: set
-    answers["(a)"] = set("Group A","Group B")
+    answers["(a)"] = {"Group A","Group B"}
 
     # type: explanatory string (at least four words)
     answers["(a) explain"] = "Single Linkage, also known as minimum linkage hierarchical clustering, is a method used to create a hierarchical clustering of a dataset. In this technique, the distance between two clusters is defined as the minimum distance between any single data point in the first cluster and any single data point in the second cluster. Since the shortest distance is between A and B, those two clusters would be combined first."
 
     # type: set
-    answers["(b)"] = set("Group A","Group C")
+    answers["(b)"] = {"Group A","Group C"}
 
     # type: explanatory string (at least four words)
     answers["(b) explain"] = "Complete Linkage, also known as maximum linkage hierarchical clustering, is another method used to create a hierarchical clustering of a dataset. In this technique, the distance between two clusters is defined as the maximum distance between any single data point in the first cluster and any single data point in the second cluster. Since Group A and Group C have the shortest complete linkage, those two are combined."
