@@ -26,10 +26,10 @@ def question1():
     answers["(c) explain"] = "While it may not be true that K means is the most efficient clustering algorithm, it is indeed true that it fater than Agglomerative clustering. Agglomerative clustering is takes more time and memory than K means, more computationally intensive due to its quadratic or cubic time complexity, compared to the generally more efficient linear or slightly superlinear time complexity of K-means clustering"
 
     # type: bool (True/False)
-    answers["(d)"] = False
+    answers["(d)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(d) explain"] = ""
+    answers["(d) explain"] = "K means algorithm works by assigning points to new centroid and recomputing centroids"
 
     # type: bool (True/False)
     answers["(e)"] = True
