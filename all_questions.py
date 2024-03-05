@@ -14,19 +14,19 @@ def question1():
     answers["(a) explain"] = "K-means clustering can be significantly influenced by outliers due to its reliance on mean-based centroid calculation, potentially leading to less reliable clustering results in the presence of outliers."
 
     # type: bool (True/False)
-    answers["(b)"] = False
+    answers["(b)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "Agglomerative hierarchical clustering procedures, while deterministic in their approach to merging clusters based on proximity, can still result in different clusterings depending on the specific linkage criteria or distance metric used"
+    answers["(b) explain"] = "Agglomerative hierarchical clustering procedures, while deterministic in their approach to merging clusters based on proximity, can still sometimes result in different clusterings depending on the specific linkage criteria or distance metric used"
 
     # type: bool (True/False)
-    answers["(c)"] = True
+    answers["(c)"] = False
 
     # type: explanatory string (at least four words)
     answers["(c) explain"] = "While it may not be true that K means is the most efficient clustering algorithm, it is indeed true that it fater than Agglomerative clustering. Agglomerative clustering is takes more time and memory than K means, more computationally intensive due to its quadratic or cubic time complexity, compared to the generally more efficient linear or slightly superlinear time complexity of K-means clustering"
 
     # type: bool (True/False)
-    answers["(d)"] = 
+    answers["(d)"] = False
 
     # type: explanatory string (at least four words)
     answers["(d) explain"] = ""
@@ -104,7 +104,7 @@ def question3():
     answers["(b) SSE"] = "4 * (a**2 + b**2  c**2)"
 
     # type: a string that evaluates to a float
-    answers["(c) SSE"] = "10 * (R^2)"
+    answers["(c) SSE"] = "4 * (R**2 + (R/2)**2)"
 
     return answers
 
@@ -125,7 +125,7 @@ def question4():
     answers["(a) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Since all the three circles are equally spaced, as the convergence begins, each of the data points will be attached to the nearest centroid, and as they are recomputed, each of the circle will have its own centroid at the end of convergence."
 
     # type: int
     answers["(b) Circle (a)"] = 1
@@ -137,7 +137,7 @@ def question4():
     answers["(b) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "As the circles are equally spaced again, each of the data point will be attached to nearest centroid. Since A already has it owns centroid, points from C will be assigned to B's right centroid, and when the centroids are recomputed, each cluster will have its own centroid."
 
     # type: int
     answers["(c) Circle (a)"] = 0
@@ -149,7 +149,7 @@ def question4():
     answers["(c) Circle (c)"] = 2
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = ""
+    answers["(c) explain"] = "Here the real clusters are not equally spaced. Once the K means algorithm begins, points from Circle B will be assigned to Centroid in A, and when they are recomputed, the centroid will lie in between the two clusters. Centroid C will get to keep both centroids"
 
     return answers
 
@@ -254,7 +254,7 @@ def question8():
     answers = {}
 
     # type: string
-    answers["(a) Matrix 1"] = ""
+    answers["(a) Matrix 1"] = "Dataset Z"
 
     # type: explanatory string (at least four words)
     answers["(a) explain diag entries, Matrix 1"] = ""
@@ -263,7 +263,7 @@ def question8():
     answers["(a) explain non-diag entries, Matrix 1"] = ""
 
     # type: string
-    answers["(a) Matrix 2"] = ""
+    answers["(a) Matrix 2"] = "Dataset X"
 
     # type: explanatory string (at least four words)
     answers["(a) explain diag entries, Matrix 2"] = ""
@@ -272,7 +272,7 @@ def question8():
     answers["(a) explain non-diag entries, Matrix 2"] = ""
 
     # type: string
-    answers["(a) Matrix 3"] = ""
+    answers["(a) Matrix 3"] = "Dataset Y"
 
     # type: explanatory string (at least four words)
     answers["(a) explain diag entries, Matrix 3"] = ""
@@ -281,16 +281,16 @@ def question8():
     answers["(a) explain non-diag entries, Matrix 3"] = ""
 
     # type: string
-    answers["(b) Row 1"] = ""
+    answers["(b) Row 1"] = "Cluster A"
 
     # type: string
-    answers["(b) Row 2"] = ""
+    answers["(b) Row 2"] = "Cluster B"
 
     # type: string
-    answers["(b) Row 3"] = ""
+    answers["(b) Row 3"] = "Cluster C"
 
     # type: string
-    answers["(b) Row 4"] = ""
+    answers["(b) Row 4"] = "Cluster D"
 
     # type: explanatory string (at least four words)
     answers["(b) Row 1 explain"] = ""
