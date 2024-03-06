@@ -26,7 +26,7 @@ def question1():
     answers["(c) explain"] = "While it may not be true that K means is the most efficient clustering algorithm, it is indeed true that it fater than Agglomerative clustering. Agglomerative clustering is takes more time and memory than K means, more computationally intensive due to its quadratic or cubic time complexity, compared to the generally more efficient linear or slightly superlinear time complexity of K-means clustering"
 
     # type: bool (True/False)
-    answers["(d)"] = True
+    answers["(d)"] = False
 
     # type: explanatory string (at least four words)
     answers["(d) explain"] = "K means algorithm works by assigning points to new centroid and recomputing centroids"
@@ -101,10 +101,10 @@ def question3():
     answers["(a) SSE"] = "4 * (R**2)"
 
     # type: a string that evaluates to a float
-    answers["(b) SSE"] = "4 * (a**2 + b**2 + R**2)"
+    answers["(b) SSE"] = "4 * (a**2 + b**2 + c**2)"
 
     # type: a string that evaluates to a float
-    answers["(c) SSE"] = "10 * (R**2)"
+    answers["(c) SSE"] = "4 * (R**2 + (R/2)**2)"
 
     return answers
 
@@ -182,7 +182,7 @@ def question6():
     answers = {}
 
     # type: set
-    answers["(a) core"] = {"E" "B", "F", "J", "C", "L", "M", "I"}
+    answers["(a) core"] = {'B', 'J', 'E', 'L', 'M', 'I', 'F', 'C'}
 
     # type: set
     answers["(a) boundary"] = {"D","G"}
@@ -215,7 +215,7 @@ def question6():
     answers["(c)-b cluster 1"] = {'A','B','C','D','E','F','G','H','I','J','L','M'}
 
     # type: set
-    answers["(c)-b cluster 2"] =  set()
+    answers["(c)-b cluster 2"] =  {'A'}
 
     # type: set
     answers["(c)-b cluster 3"] = set()
@@ -314,19 +314,19 @@ def question9():
     answers = {}
 
     # type: list
-    answers["(a)"] = ["hierarchial","overlapping","partial"]
+    answers["(a)"] = ['Hierarchical', 'overlapping', 'partial']
 
     # type: list
-    answers["(b)"] = ["partitional","exclusive","complete"]
+    answers["(b)"] = ['Partitional', 'exclusive', 'complete']
+    
+    # type: list
+    answers["(c)"] = ["Partitional","fuzzy","complete"]
 
     # type: list
-    answers["(c)"] = ["partitional","fuzzy","complete"]
+    answers["(d)"] = ["Hierarchial","overlapping","partial"]
 
     # type: list
-    answers["(d)"] = ["hierarchial","overlapping","partial"]
-
-    # type: list
-    answers["(e)"] = ["partitional","exclusive","partial"]
+    answers["(e)"] = ['Partitional', 'Exclusive', 'partial']
 
     # type: explanatory string (at least four words)
     answers["(e) explain"] = "Hierachial structure can be possible for students with similar scores"
